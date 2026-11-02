@@ -2,6 +2,17 @@
 
 Hermes Agent adaptation of the [Cloudflare security-audit skill](https://github.com/cloudflare/security-audit-skill).
 
+## About
+
+**security-audit-hermes** is a defensive, source-first security audit workflow built for the Hermes Agent. It answers security questions and performs comprehensive source audits without drifting into vulnerability hunting for its own sake.
+
+Its two modes:
+
+- **Guidance mode** — answer security questions, focused reviews, methodology.
+- **Full audit mode** — a six-phase comprehensive audit with coverage tracking, hunting, validation, and reporting.
+
+Everything the agent needs to do its job lives in the bundle, including the companion references in `references/` and domain companions (client-side, cloud/deployment, data isolation, desktop/mobile IPC, memory-safety, protocols, resource exhaustion, supply-chain, web protocol/auth).
+
 ## Installation
 
 Copy this directory into your Hermes skills directory:
